@@ -9,4 +9,5 @@
 
 #### Change Log
 
+08/09/2025 - added a snake game, main file and a class file.
 07/09/2025 - created repository and added readme file. 
