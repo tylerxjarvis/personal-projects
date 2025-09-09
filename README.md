@@ -9,5 +9,6 @@
 
 #### Change Log
 
-08/09/2025 - added a snake game, main file and a class file.
+09/09/2025 - snake - added food and scoreboard class files and configured collisions. 
+08/09/2025 - snake - added a main file and a snake class file.
 07/09/2025 - created repository and added readme file. 
