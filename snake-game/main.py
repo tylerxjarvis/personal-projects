@@ -32,6 +32,18 @@ while not game_over:
     if snake.head.distance(food) < 15:
         food.refresh() # refresh the food
         scoreboard.increase_score() # increase the score
+        snake.extend_snake() # extend the snake
+
+    # define a way to detect collision with the tail
+    for segment in snake.segments[1:-1]:
+        if snake.head.distance(segment) < 10:
+            game_over = True # end the game
+            scoreboard.game_over() # print the game over message
+
+    # define a way to detect collision with the wall
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_over = True # end the game
+        scoreboard.game_over() # print the game over message
 
 # exit the screen
 screen.exitonclick()
